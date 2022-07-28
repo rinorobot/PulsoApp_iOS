@@ -19,6 +19,8 @@ class ResultadosViewController: UIViewController{
     @IBOutlet weak var mensaje: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
        
         
         fondo()
@@ -70,7 +72,7 @@ class ResultadosViewController: UIViewController{
     }
     
     @objc func salir(){
-        print("Hola mundo")
+        
         self.navigationController?.viewControllers.removeLast(2)
     }
   

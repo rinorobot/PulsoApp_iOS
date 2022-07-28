@@ -56,7 +56,11 @@ class PreguntaDetalle: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        a_i.style = .large
+        if #available(iOS 13.0, *) {
+            a_i.style = .large
+        } else {
+            // Fallback on earlier versions
+        }
         a_i.color = .red
         a_i.hidesWhenStopped = true
         a_i.center = self.view.center

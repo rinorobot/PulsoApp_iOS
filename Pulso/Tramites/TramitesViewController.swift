@@ -13,8 +13,13 @@ class TramitesViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "UNAM | CCH-NAUCALPAM"
-        let infoBtn = UIBarButtonItem(image: UIImage(systemName: "info")!,style: .plain, target: self, action: #selector(irInformacion))
-        navigationItem.rightBarButtonItem = infoBtn
+        if #available(iOS 13.0, *) {
+            let infoBtn = UIBarButtonItem(image: UIImage(systemName: "info")!,style: .plain, target: self, action: #selector(irInformacion))
+            navigationItem.rightBarButtonItem = infoBtn
+        } else {
+            // Fallback on earlier versions
+        }
+      
 
                fondo()
         

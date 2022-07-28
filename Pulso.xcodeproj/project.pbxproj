@@ -83,7 +83,6 @@
 		ACDCAF47286CB2FE00615D7F /* violencia_interior.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ACDCAF46286CB2FD00615D7F /* violencia_interior.pdf */; };
 		ACDCAF49286CB33000615D7F /* arma.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ACDCAF48286CB33000615D7F /* arma.pdf */; };
 		ACDCAF4B286CB33F00615D7F /* denuncia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ACDCAF4A286CB33F00615D7F /* denuncia.pdf */; };
-		ACE030BD27DDA63C004DEB20 /* ExamenesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE030BC27DDA63C004DEB20 /* ExamenesModel.swift */; };
 		ACE030C427DDACE9004DEB20 /* ExamenesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE030C227DDACE9004DEB20 /* ExamenesTableViewCell.swift */; };
 		ACE030C527DDACE9004DEB20 /* ExamenesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE030C327DDACE9004DEB20 /* ExamenesTableViewCell.xib */; };
 		ACE07E27285992E600012A15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACE07E26285992E500012A15 /* GoogleService-Info.plist */; };
@@ -213,10 +212,10 @@
 		ACDCAF46286CB2FD00615D7F /* violencia_interior.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = violencia_interior.pdf; sourceTree = "<group>"; };
 		ACDCAF48286CB33000615D7F /* arma.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = arma.pdf; sourceTree = "<group>"; };
 		ACDCAF4A286CB33F00615D7F /* denuncia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = denuncia.pdf; sourceTree = "<group>"; };
-		ACE030BC27DDA63C004DEB20 /* ExamenesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenesModel.swift; sourceTree = "<group>"; };
 		ACE030C227DDACE9004DEB20 /* ExamenesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenesTableViewCell.swift; sourceTree = "<group>"; };
 		ACE030C327DDACE9004DEB20 /* ExamenesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamenesTableViewCell.xib; sourceTree = "<group>"; };
 		ACE07E26285992E500012A15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACE321512891CAFA0096D6DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +356,7 @@
 				AC77665127D45FDC006A1395 /* PulsoTests */,
 				AC77665B27D45FDC006A1395 /* PulsoUITests */,
 				AC77663927D45FDA006A1395 /* Products */,
+				ACE321502891CAF90096D6DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -421,7 +421,6 @@
 		AC8CB2FE27DB0218009E4EAE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ACE030BC27DDA63C004DEB20 /* ExamenesModel.swift */,
 				AC763643285BE34F00FCA5FB /* NewsModel.swift */,
 				AC088C17285D487A00269D38 /* ReviewModel.swift */,
 				AC88037D28613D6B00F88DEB /* ExamenModel.swift */,
@@ -439,6 +438,14 @@
 				AC9F990D283C521B00129F49 /* DetalleRevista.swift */,
 			);
 			path = Publicaciones;
+			sourceTree = "<group>";
+		};
+		ACE321502891CAF90096D6DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE321512891CAFA0096D6DC /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -668,7 +675,6 @@
 				AC77663E27D45FDA006A1395 /* SceneDelegate.swift in Sources */,
 				AC69B9BE27D467280094973A /* PublicacionesViewController.swift in Sources */,
 				AC88037E28613D6B00F88DEB /* ExamenModel.swift in Sources */,
-				ACE030BD27DDA63C004DEB20 /* ExamenesModel.swift in Sources */,
 				ACE030C427DDACE9004DEB20 /* ExamenesTableViewCell.swift in Sources */,
 				AC686EDB286C112800F7EC16 /* Incendio.swift in Sources */,
 				AC686EE3286C116E00F7EC16 /* Sustancias.swift in Sources */,
@@ -785,7 +791,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -840,7 +846,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -866,6 +872,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -895,6 +902,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -25,12 +25,21 @@ class NoticiasViewController: UIViewController {
         navigationItem.title = "UNAM | CCH-NAUCALPAN"
         
         
-        let infoBtn = UIBarButtonItem(image: UIImage(systemName: "info")!,style: .plain, target: self, action: #selector(irInformacion))
+        if #available(iOS 13.0, *) {
+            let infoBtn = UIBarButtonItem(image: UIImage(systemName: "info")!,style: .plain, target: self, action: #selector(irInformacion))
+            navigationItem.rightBarButtonItem = infoBtn
+        } else {
+            // Fallback on earlier versions
+        }
         
-        navigationItem.rightBarButtonItem = infoBtn
+       
       
 
-        a_i.style = .large
+        if #available(iOS 13.0, *) {
+            a_i.style = .large
+        } else {
+            // Fallback on earlier versions
+        }
         a_i.color = .red
         a_i.hidesWhenStopped = true
         a_i.center = self.view.center

@@ -22,7 +22,11 @@ class ExamenesViewController: UIViewController {
         super.viewDidLoad()
        
         fondo()
-        a_i.style = .large
+        if #available(iOS 13.0, *) {
+            a_i.style = .large
+        } else {
+            // Fallback on earlier versions
+        }
         a_i.color = .red
         a_i.hidesWhenStopped = true
         a_i.center = self.view.center
@@ -55,8 +59,13 @@ class ExamenesViewController: UIViewController {
         
         
         navigationItem.title = "UNAM | CCH-NAUCALPAM"
-        let infoBtn = UIBarButtonItem(image: UIImage(systemName: "info")!,style: .plain, target: self, action: #selector(irInformacion))
-        navigationItem.rightBarButtonItem = infoBtn
+        if #available(iOS 13.0, *) {
+            let infoBtn = UIBarButtonItem(image: UIImage(systemName: "info")!,style: .plain, target: self, action: #selector(irInformacion))
+            navigationItem.rightBarButtonItem = infoBtn
+        } else {
+            // Fallback on earlier versions
+        }
+        
     }
     
     
